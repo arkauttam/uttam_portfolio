@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-
 
 <body>
     <!-- header site............................................................. -->
     <header>
-        <div class="logo"><span>u</span>uutam.</div>
+        <div class="logo">Portfo<span>lio.</span></div>
         <ul class="navlist">
             <li><a href="#home" style="--i:1;">Home</a></li>
             <li><a href="#about" style="--i:2;">About</a></li>
@@ -29,7 +33,7 @@
         <div class="home-content scroll-scale">
             <h1>Hi! I'm Uttam Ghosh</h1>
             <div class="change-text">
-                <h3>And I'm</h3>
+                <h3>And I'm a</h3>
                 <h3>
                     <span class="word">Youtuber</span>
                     <span class="word">Web &nbsp;Designer</span>
@@ -38,9 +42,10 @@
                     <span class="word">Graphic &nbsp; Desinger</span>
                 </h3>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis expedita sint qui ea quod praesentium
-                explicabo numquam ut beatae delectus.</p>
-            <div class="info-box">
+            <p>Highly skilled Front-End Web Developer with a passion for creating visually appealing and user-friendly
+                websites.Proficient in HTML, CSS, JavaScript, and various front-end frameworks. Experienced in
+                collaborating with cross-functional teams to deliver high-quality projects.</p>
+            <!-- <div class="info-box">
                 <div class="email-info">
                     <h5>Email:</h5>
                     <span>john1234@mail.com</span>
@@ -49,20 +54,21 @@
                     <h5>Behance :</h5>
                     <span>behance.net/john</span>
                 </div>
-            </div>
+            </div> -->
             <div class="btn-box">
-                <a href="#" class="btn">Download CV</a>
-                <a href="#" class="btn">Hire Me Now!</a>
+                <a href="https://drive.google.com/file/d/19ialoO3P1x6lZ-n2OvbHQbmyBHgaDUe0/view?usp=sharing"
+                    download="UTTAM.pdf" target="_blank" class="btn">Download CV</a>
+                <a href="#contact" class="btn">Hire Me Now!</a>
             </div>
-            <div class="social-icons">
+            <!-- <div class="social-icons">
                 <a href="#"><i class='bx bxl-facebook'></i></a>
                 <a href="#"><i class='bx bxl-instagram'></i></a>
                 <a href="#"><i class='bx bxl-twitter'></i></a>
                 <a href="#"><i class='bx bxl-dribbble'></i></a>
-            </div>
+            </div> -->
         </div>
         <div class="home-image scroll-scale">
-            <div class="img-box">
+            <div class="img-box card">
                 <img src="assets/cvpic2.png" alt="">
             </div>
             <div class="liquid-shape">
@@ -105,30 +111,37 @@
     </section>
     <!-- about section.........................................................-->
     <section id="about" class="about">
-
         <div class="img-about scroll-scale">
-            <img src="assets/cvpic.jpg" alt="">
+            <div class="card">
+                <img src="assets/cvpic.jpg" alt="">
+            </div>
             <div class="info-about1">
-                <span>10+</span>
+                <span>3+</span>
                 <p>Years of Experience</p>
             </div>
             <div class="info-about2">
-                <span>150+</span>
+                <span>15+</span>
                 <p>Project Complete</p>
             </div>
             <div class="info-about3">
-                <span>200+</span>
+                <span>20+</span>
                 <p>Happy Cionts</p>
             </div>
         </div>
-
         <div class="about-content scroll-scale">
-            <span>Let me introduce myself</span>
-            <h2>About Me</h2>
-            <h3>A story of good</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor explicabo ducimus architecto soluta
-                aliquid doloremque mollitia sunt temporibus necessitatibus blanditi quaerat adipisci, debitis beatae
-                recusandae placeat dolore deleniti vitae non.</p>
+            <h2 class="title">About me</h2>
+            <h3>Let me introduce myself</h3>
+            <p>I am determined to realize my
+                dream of building the best
+                websites and contributing to the
+                digital revolution.I am confident
+                that I can be a valuable asset to
+                your team. and Highly skilled Front-End Web Developer with a passion for
+                creating visually appealing and user-friendly websites.
+                Proficient in HTML, CSS, JavaScript, and various front-end
+                frameworks. Experienced in collaborating with cross-functional
+                teams to deliver high-quality projects.Thank you for
+                considering my application.</p>
             <div class="btn-box">
                 <a href="#" class="btn">Read More!</a>
             </div>
@@ -138,17 +151,17 @@
     <!-- services section.........................................................-->
     <section id="services" class="services">
         <div class="main-text scroll-scale">
-            <span>what i will do for you</span>
-            <h2>Our Services</h2>
+            <h2 class="">My services</h2>
+            <span>what i provide</span>
         </div>
 
-        <div class="section-services scroll-bottom">
-            <div class="service-box">
-                <i class='bx bxs-layer service-icon'></i>
-                <h3>Graphic Designer</h3>
+        <div class="section-services scroll-bottom carousel1 owl-carousel">
+            <div class="service-box card">
+                <i class="fas fa-paint-brush service-icon"></i>
+                <h3>Web Desinger</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ullam perferendis animi dolores
-                    nostrum ut doloribus et harum!
+                    As a web designer, my objective is to make a positive impact on clients, co-workers, and the
+                    Internet using my skills and experience to design compelling and attractive websites.
                 </p>
                 <div class="btn-box service-btn">
                     <a href="#" class="btn">Read More</a>
@@ -156,23 +169,26 @@
             </div>
 
             <div class="service-box">
-                <i class='bx bx-code-alt service-icon'></i>
-                <h3>Graphic Designer</h3>
+                <i class='fas fa-code service-icon'></i>
+
+                <h3>Web development</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ullam perferendis animi dolores
-                    nostrum ut doloribus et harum!
+                    Proficient in HTML, CSS, JavaScript and responsive design frameworks. Strong track record of
+                    delivering high-quality websites and applications, optimizing user experiences, and collaborating
+                    effectively with cross-functional teams to meet project goals.”
                 </p>
                 <div class="btn-box service-btn">
                     <a href="#" class="btn">Read More</a>
                 </div>
             </div>
 
-            <div class="service-box">
+            <div class="service-box card">
                 <i class='bx bx-desktop service-icon'></i>
                 <h3>Graphic Designer</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ullam perferendis animi dolores
-                    nostrum ut doloribus et harum!
+                    I'm a creative person driven by my passion for design. I'm proficient with graphic tools and have an
+                    artistic approach towards everything I create. I'm also a team player and know how to improve myself
+                    when given feedback.
                 </p>
                 <div class="btn-box service-btn">
                     <a href="#" class="btn">Read More</a>
@@ -183,13 +199,21 @@
     <!-- skill section.........................................................-->
     <section id="skills" class="skills">
         <div class="main-text scroll-scale">
-            <span>technical and professional</span>
             <h2>My Skills</h2>
+            <span> -What i know- </span>
         </div>
         <div class="skill-main">
             <div class="skill-left scroll-scale">
-                <h3>Technical Skills</h3>
-                <div class="skill-bar">
+                <h3>My creative <span class="highlight">Skills</span> & experiences.</h3>
+                <p>Highly skilled Front-End Web Developer with a passion for
+                    creating visually appealing and user-friendly websites.
+                    Proficient in HTML, CSS, JavaScript, and various front-end
+                    frameworks. Experienced in collaborating with cross-functional
+                    teams to deliver high-quality projects.</p>
+                <div class="btn-box">
+                    <a href="#contact" class="btn">Hire Me Now !</a>
+                </div>
+                <!-- <div class="skill-bar">
                     <div class="info">
                         <p>HTML</p>
                         <p>80%</p>
@@ -224,37 +248,72 @@
                     <div class="bar">
                         <span class="css"></span>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="skill-right scroll-scale">
-                <h3>Professional Skills</h3>
                 <div class="porfessional">
                     <div class="box">
-                        <div class="circle" data-dots="80" data-percent="90"></div>
+                        <div class="circle" data-dots="60" data-percent="90"></div>
                         <div class="text">
-                            <big>90%</big>
-                            <small>Team Work</small>
+                            <big><i class='bx bxl-html5 service-icon2'></i>
+                            </big>
+                            <small>HTML</small>
                         </div>
                     </div>
                     <div class="box">
-                        <div class="circle" data-dots="80" data-percent="60"></div>
+                        <div class="circle" data-dots="60" data-percent="90"></div>
                         <div class="text">
-                            <big>60%</big>
-                            <small>Team Work</small>
+                            <big><i class='bx bxl-css3 service-icon2'></i>
+                            </big>
+                            <small>CSS</small>
                         </div>
                     </div>
                     <div class="box">
-                        <div class="circle" data-dots="80" data-percent="80"></div>
+                        <div class="circle" data-dots="60" data-percent="65"></div>
                         <div class="text">
-                            <big>80%</big>
-                            <small>Team Work</small>
+                            <big><i class='bx bxl-sass service-icon2'></i>
+                            </big>
+                            <small>SASS</small>
                         </div>
                     </div>
                     <div class="box">
-                        <div class="circle" data-dots="80" data-percent="70"></div>
+                        <div class="circle" data-dots="60" data-percent="80"></div>
                         <div class="text">
-                            <big>70%</big>
-                            <small>Team Work</small>
+                            <big><i class="fa-brands fa-bootstrap service-icon2"></i>
+                            </big>
+                            <small>BootsTrap</small>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="circle" data-dots="60" data-percent="70"></div>
+                        <div class="text">
+                            <big><i class="fa-brands fa-square-js service-icon2"></i>
+                            </big>
+                            <small>JavaScript</small>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="circle" data-dots="60" data-percent="50"></div>
+                        <div class="text">
+                            <big><i class='bx bxl-typescript service-icon2'></i>
+                            </big>
+                            <small>TypeScript</small>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="circle" data-dots="60" data-percent="55"></div>
+                        <div class="text">
+                            <big><i class="fa-brands fa-react service-icon2"></i>
+                            </big>
+                            <small>React</small>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="circle" data-dots="60" data-percent="80"></div>
+                        <div class="text">
+                            <big><i class="fa-brands fa-git-alt service-icon2"></i></i>
+                            </big>
+                            <small>GIt & GItHub</small>
                         </div>
                     </div>
                 </div>
@@ -372,12 +431,16 @@
     <!--footer section.........................................................-->
     <footer>
         <p class="scroll-scale">Copyright &copy; 2023 by Uttam|| All Right Reservd.</p>
-        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
     </footer>
+    <!-- scroll_button add -->
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
 </body>
 
 <script src="script.js"></script>
 <script src="mixitup.min.js"></script>
+<script type="text/javascript" src="dpimage.js"></script>
 <!-- header and sticky add class script tag -->
 <script>
     let menuLi = document.querySelectorAll("header ul li a");
@@ -434,6 +497,34 @@
 </script>
 <script>
     var mixer = mixitup(".portfolio-gallery");
+</script>
+<!-- dpimage -->
+<script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400,
+    });
+
+    //It also supports NodeList
+    VanillaTilt.init(document.querySelectorAll(".card"));
+</script>
+<!-- scroll up -->
+<script>
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if (this.scrollY > 500) {
+                $(".scroll-up-btn").addClass("show");
+            } else {
+                $(".scroll-up-btn").removeClass("show");
+            }
+        });
+
+        $(".scroll-up-btn").click(function () {
+            $("html").animate({ scrollTop: 0 });
+            $("html").css("scrollBehavior", "auto");
+        });
+    })
+
 </script>
 
 </html>
