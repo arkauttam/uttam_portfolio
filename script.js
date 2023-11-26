@@ -54,3 +54,15 @@ circles.forEach((elem) => {
     pointsMarked[i].classList.add("marked");
   }
 });
+
+// portbtn///////////////////////////////////////
+
+var buttons = document.querySelectorAll(".portbtn");
+buttons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    buttons.forEach(function (btn) {
+      btn.classList.remove("portactive");
+    });
+    button.classList.add("portactive");
+  });
+});
