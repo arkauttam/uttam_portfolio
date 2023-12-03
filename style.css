@@ -209,8 +209,9 @@ section{
 
 .btn:hover{
     color: var(--hover-color);
+    transition: 1s;
 }
-.btn::before{
+ /* .btn::before{
     content: "";
     position: absolute;
     top: 0;
@@ -223,14 +224,33 @@ section{
 }
 .btn:hover::before{
     width: 100%;
+}  */
+.btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+    background: linear-gradient(to right, var(--hover-color), var(--bg-color), var(--hover-color));
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: .8s;
 }
+
+.btn:hover::after {
+    width: 200%; 
+    transform: translate(-50%, -50%) ;
+}
+
+
 .btn:nth-child(2){
     background:var(--bg-color) ;
     color: var(--hover-color);
 }
-.btn:nth-child(2):hover{
+/* .btn:nth-child(2):hover{
     color: var(--bg-color);
-} 
+}  */
 
 .btn:nth-child(2)::before{ 
     background: var(--hover-color); 
